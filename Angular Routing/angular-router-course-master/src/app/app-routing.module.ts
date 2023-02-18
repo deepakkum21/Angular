@@ -60,7 +60,7 @@ const routes: Routes = [
         error: URIError,
         urlSerializer: UrlSerializer,
         url: string
-      ) => urlSerializer.parse("/page-not-found"),
+      ) => urlSerializer.parse("/page-not-found"), // gets triggered when URL parsing gets into issue
     }),
   ],
   exports: [RouterModule],
