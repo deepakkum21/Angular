@@ -55,6 +55,7 @@ const routes: Routes = [
       useHash: false, // for treating every route as a internal page
       scrollPositionRestoration: "enabled",
       paramsInheritanceStrategy: "always",
+      relativeLinkResolution: "corrected", // helpful for "" empty route component when want to move using "./" and the parent one is "" empty route at that time "../" should be correct so it makes that changes
       malformedUriErrorHandler: (
         error: URIError,
         urlSerializer: UrlSerializer,
