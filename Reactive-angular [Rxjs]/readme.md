@@ -68,3 +68,7 @@
             // [1, 0, 0] after 1s
             // [1, 5, 0] after 5s
         // [1, 5, 10] after 10s
+
+## changeDetection: ChangeDetectionStrategy.OnPush
+
+- Angular will render when any one of the data is changed until it wouldn't check on it's own
